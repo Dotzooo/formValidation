@@ -1,0 +1,231 @@
+@charset "UTF-8";
+html {
+  height: 100%;
+}
+
+html body {
+  font-family: "微軟正黑體";
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#141e30), to(#243b55));
+  background: linear-gradient(#141e30, #243b55);
+}
+
+html body .navbar-custom {
+  border-top: 3px solid #28a745;
+  border-bottom: 3px solid #28a745;
+  border-left: 3px solid #28a745;
+  border-right: 3px solid #28a745;
+  width: calc(100%-4rem);
+  background: #fff;
+  position: relative;
+}
+
+html body .navbar-custom::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  bottom: -55%;
+  width: 255px;
+  -webkit-transform: translateX(146%);
+          transform: translateX(146%);
+  border-top: 30px solid #28a745;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+
+html body .navbar-custom::after {
+  position: absolute;
+  content: "";
+  height: 0;
+  bottom: -50%;
+  border-top: 30px solid #fff;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  width: 250px;
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
+}
+
+html body .navbar-custom .navCart {
+  color: #28a745;
+}
+
+html .form-signin {
+  width: 400px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+html .form-signin h1 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+html .form-signin .form-group {
+  position: relative;
+}
+
+html .form-signin .form-group input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  border-radius: 0;
+}
+
+html .form-signin .form-group input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+html .form-signin .form-group label {
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+html .form-signin .btn-login {
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.5s cubic-bezier(1, 0.15, 0.34, 0.92);
+  transition: all 0.5s cubic-bezier(1, 0.15, 0.34, 0.92);
+}
+
+html .form-signin .btn-login span {
+  display: inline-block;
+  -webkit-transition: inherit;
+  transition: inherit;
+  color: white;
+}
+
+html .form-signin .btn-login:hover span {
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+html .form-signin .btn-login::before {
+  content: "";
+  background-color: #cecddf;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: inherit;
+  transition: inherit;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(1, 0.15, 0.34, 0.92);
+  transition: -webkit-transform 0.5s cubic-bezier(1, 0.15, 0.34, 0.92);
+  transition: transform 0.5s cubic-bezier(1, 0.15, 0.34, 0.92);
+  transition: transform 0.5s cubic-bezier(1, 0.15, 0.34, 0.92), -webkit-transform 0.5s cubic-bezier(1, 0.15, 0.34, 0.92);
+}
+
+html .form-signin .btn-login::after {
+  content: "登入";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: inherit;
+  transition: inherit;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  width: 100%;
+}
+
+html .form-signin .btn-login:hover::before {
+  -webkit-transform: translateY(0) scale(3);
+          transform: translateY(0) scale(3);
+  -webkit-transition-delay: 0.025s;
+          transition-delay: 0.025s;
+}
+
+html .form-signin .btn-login:hover::after {
+  opacity: 1;
+  color: black;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+html .customTable .customTable-thead tr th {
+  color: #fff;
+}
+
+html .customTable .customTable-tbody tr {
+  color: #fff;
+}
+
+html .customTable .customTable-tbody tr .btnEdit {
+  color: #fff;
+}
+
+html .customPagination .pagination {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+html .productImg {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+html .btn-addCart {
+  background: -webkit-gradient(linear, left top, left bottom, from(#496baa), to(#243b55));
+  background: linear-gradient(#496baa, #243b55);
+}
+
+html .btn-addCart:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#243b55), to(#496baa));
+  background: linear-gradient(#243b55, #496baa);
+}
+
+html #cartModal .modal-header h4 {
+  margin-bottom: 0;
+}
+
+html #cartModal .modal-body {
+  padding-bottom: 0;
+}
+
+html #cartModal .modal-body .table td {
+  vertical-align: middle;
+}
+/*# sourceMappingURL=all.css.map */
